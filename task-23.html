@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+	<style>
+	span{
+	  background:red;
+	  color:white;
+	  padding:10px;
+	  } 
+	</style>
+<body>
+    
+	<h1>Click The Button Quote will change Randomly</h1>
+	<h2 id="quo">Quote</h2>
+	<p id="quo1">Author</p>
+	<button id="btn">Click</button>
+   
+
+   <script>
+  
+	  
+     let head=document.getElementById("quo");
+	 let para=document.getElementById("quo1");
+	 let btn=document.getElementById("btn");
+	 
+	  let work=btn.addEventListener("click",generate);
+	   function generate(){
+	   let newQuote=parseInt(Math.random()*quote.length);
+	   console.log("newQuote");
+	   console.log("clicked");
+	   console.log (quote[newQuote].Author);
+	   head.innerHTML=quote[newQuote].Quote;
+       }
+     let quote=[
+	     {
+	     Quote:"Silence is Gold",
+		 Author:"Sekar",
+		 },
+		 {
+		 Quote:"Spread love everywhere you go. Let no one ever come to you without leaving happier",
+		 Author:"Mother Teresa",
+		 },
+		 {
+		 Quote:"When you reach the end of your rope, tie a knot in it and hang on",
+		 Author:"Franklin D. Roosevelt",
+		 },
+		 {
+		 Quote:"Always remember that you are absolutely unique. Just like everyone else",
+		 Author:"Margaret Mead",
+		 },
+		 {
+		 Quote:"Don't judge each day by the harvest you reap but by the seeds that you plant",
+		 Author:"Robert Louis Stevenson",
+		 },
+		 {
+		 Quote:"The future belongs to those who believe in the beauty of their dreams",
+		 Author:"Eleanor Roosevelt",
+		 },
+		 {
+		 Quote:"It is during our darkest moments that we must focus to see the light",
+		 Author:"Aristotle",
+		 },
+		 {
+		 Quote:"Whoever is happy will make others happy too",
+		 Author:"Anne Frank",
+		 },
+		 ]
+		 console.log(quote);
+		 
+   </script>
+</body>
+</html>
